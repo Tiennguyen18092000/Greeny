@@ -8,6 +8,7 @@ import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ComponentsModule } from './components/components.module';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ComponentsModule } from './components/components.module';
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
-    ComponentsModule
+    ComponentsModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
