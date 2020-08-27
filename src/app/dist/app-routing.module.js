@@ -11,8 +11,6 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var routes = [
     { path: 'home', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/home/home.module'); }).then(function (m) { return m.HomeModule; }); } },
-    { path: 'singIn', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/sing-in/sing-in.module'); }).then(function (m) { return m.SingInModule; }); } },
-    { path: 'singUp', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/sing-up/sing-up.module'); }).then(function (m) { return m.SingUpModule; }); } },
     { path: 'upload', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/upload/upload.module'); }).then(function (m) { return m.UploadModule; }); } },
     { path: 'premium', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/premium/premium.module'); }).then(function (m) { return m.PremiumModule; }); } },
     { path: 'playlist', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/playlist/playlist.module'); }).then(function (m) { return m.PlaylistModule; }); } },
