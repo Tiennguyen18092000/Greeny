@@ -14,6 +14,8 @@ var routes = [
     { path: 'upload', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/upload/upload.module'); }).then(function (m) { return m.UploadModule; }); } },
     { path: 'premium', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/premium/premium.module'); }).then(function (m) { return m.PremiumModule; }); } },
     { path: 'playlist', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/playlist/playlist.module'); }).then(function (m) { return m.PlaylistModule; }); } },
+    { path: 'signup', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/signup/signup.module'); }).then(function (m) { return m.SignupModule; }); } },
+    { path: 'signin', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/signin/signin.module'); }).then(function (m) { return m.SigninModule; }); } },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

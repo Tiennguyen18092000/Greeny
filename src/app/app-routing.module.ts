@@ -6,6 +6,8 @@ const routes: Routes = [
   { path: 'upload', loadChildren: () => import('./pages/upload/upload.module').then(m => m.UploadModule) },
   { path: 'premium', loadChildren: () => import('./pages/premium/premium.module').then(m => m.PremiumModule) },
   { path: 'playlist', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule) },
+  { path: 'signup', loadChildren: () => import('./pages/signup/signup.module').then(m => m.SignupModule) },
+  { path: 'signin', loadChildren: () => import('./pages/signin/signin.module').then(m => m.SigninModule) },
 
 ];
 
