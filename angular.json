@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Greeny"
+    }
+  },
+  "defaultProject": "Greeny",
+  "cli": {
+    "analytics": false
+  }
 }
