@@ -3,13 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { PremiumRoutingModule } from './premium-routing.module';
 import { PremiumComponent } from './premium.component';
-
+import { NbThemeModule,
+         NbLayoutModule,
+         NbButtonModule,
+          NbCardModule, } from '@nebular/theme';
 
 @NgModule({
   declarations: [PremiumComponent],
   imports: [
     CommonModule,
-    PremiumRoutingModule
-  ]
+    PremiumRoutingModule,
+    NbLayoutModule,
+    NbThemeModule,
+    NbButtonModule,
+    NbCardModule,
+  ],
 })
-export class PremiumModule { }
+export class PremiumModule {}
