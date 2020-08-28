@@ -7,7 +7,7 @@
 }
 
 .intro-font{
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 500;
 }
 
@@ -17,17 +17,11 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .wrapper {
   display: flex;
   justify-content: left;
-  margin-top:5%
+  margin-top:5%;
+  margin-bottom: 2%;
 }
 
 .cta {
@@ -71,7 +65,7 @@ body {
     width: 20px;
     margin-left: 30px;
     position: relative;
-    top: 12%;
+    top: 5%;
   }
 
 /**************SVG****************/
@@ -113,3 +107,24 @@ path.two {
         fill: white;
     }
 }
+
+
+.body{
+  margin:auto;
+  text-align: center;
+  height: 70%;
+}
+
+.introitem{
+  justify-content: space-between;
+  display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: repeat(1, 50px);
+}
+
+img{
+  width:70%;
+  margin-top: 20%;
+}
+
