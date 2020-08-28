@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 
+
+
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+
 import { ComponentsModule } from './components/components.module';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +23,14 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
+
     ComponentsModule,
     
+
+    NbEvaIconsModule,
+    ComponentsModule,
+    UiModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
