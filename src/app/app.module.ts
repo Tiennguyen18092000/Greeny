@@ -4,9 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 import { ComponentsModule } from './components/components.module';
+import { NebularModule } from './nebular/nebular.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService } from '@nebular/theme';
 
 @NgModule({
   declarations: [
@@ -15,13 +20,19 @@ import { ComponentsModule } from './components/components.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
+
     ComponentsModule,
     
+
+    NbEvaIconsModule,
+    NbIconModule,
+    ComponentsModule,
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
