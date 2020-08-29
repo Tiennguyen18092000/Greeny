@@ -5,9 +5,31 @@
   justify-content: center;
 }
 
+.btn2 {
+  height: 50px;
+  line-height: 5px;
+  display: flex;
+  justify-content: center;
+  width: 1700px;
+}
+
+.button {
+  clear: right;
+  size: 50px;
+  border-radius: 30% 30% 30% 30%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  text-decoration: none;
+  background-color: black;
+  color: #35f51c;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
 .text {
   font-family: "Russo One", sans-serif;
-  font-size: 95px;
+  font-size: 100px;
   text-align: center;
   vertical-align: inherit;
   line-height: 1;
@@ -21,7 +43,7 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .text {
     font-family: "Russo One", sans-serif;
     font-size: 200%;
@@ -35,7 +57,17 @@
     font-family: "Russo One", sans-serif;
     font-size: 100%;
     display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
+  }
+
+  .btn2 {
+    height: 50%;
+    line-height: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 200px;
   }
 }
