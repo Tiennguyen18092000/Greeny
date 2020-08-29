@@ -9,6 +9,8 @@ import {MatMenuModule} from '@angular/material/menu';
 
 
 
+
+
 @NgModule({
   declarations: [NavBarComponent, SideBarComponent,],
   imports: [
@@ -17,9 +19,11 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
    MatMenuModule,
+  
   ],
   exports:[
-    NavBarComponent
+    NavBarComponent, 
+    
   ]
 })
 export class ComponentsModule { }
