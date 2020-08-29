@@ -1,9 +1,20 @@
-<mat-toolbar class="mat-elevation-z6" style="background-color: #263238;">
-    <img src="../../../assets/002.png" style="width:10%;">
-      <span class="example-spacer"></span>
-        <button mat-button class = "bnt1">Premium</button>
-        <button mat-button class = "bnt1">Support</button>
-        |
-        <button mat-button class = "bnt1">Login</button>       
-        <button mat-button class = "bnt1">Resigter</button>   
-</mat-toolbar>
+<header>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+</header>
+<body>
+    <div class = "nav">
+        <mat-toolbar class="mat-elevation-z6" style="background-color: #263238; position: fixed;">
+          <img src="../../../assets/002.png" style="width: 12%;">
+            <span class="example-spacer"></span>
+              <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/> 
+                  <div class="menu">
+                      <button mat-button class = "bnt1" >Premium</button>
+                      <button mat-button class = "bnt1" >Support</button>
+                      <button mat-button class = "bnt1">Login</button>       
+                      <button mat-button class = "bnt1">Resigter</button>                     
+                  </div>
+        </mat-toolbar>
+    </div>
+</body>
