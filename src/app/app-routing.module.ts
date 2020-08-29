@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'upload', loadChildren: () => import('./pages/upload/upload.module').then(m => m.UploadModule) },
   { path: 'premium', loadChildren: () => import('./pages/premium/premium.module').then(m => m.PremiumModule) },
   { path: 'playlist', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule) },
+  { path: 'library', loadChildren: () => import('./pages/library/library.module').then(m => m.LibraryModule) },
 
 ];
 

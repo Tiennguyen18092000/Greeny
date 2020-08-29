@@ -11,5 +11,5 @@ export class PlaylistComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+ data: Array<any>=[];
 }
