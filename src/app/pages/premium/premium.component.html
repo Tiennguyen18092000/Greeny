@@ -4,7 +4,7 @@
       <h1 style="margin-bottom: 4%" class="intro-font">
         Get Premium free for 1 month
       </h1>
-      <h1 style="font-size: 2vw">Just 59000₫/month after. Cancel anytime.</h1>
+      <h1 class="nhf">Just 59000₫/month after. Cancel anytime.</h1>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <div class="wrapper">
@@ -40,7 +40,7 @@
         </a>
       </div>
 
-      <h1 style="font-size: 1vw">
+      <h1 class="nbt">
         <a href="" style="cursor: pointer; color: white"
           ><u> Terms and conditions apply.</u></a
         >
@@ -81,6 +81,26 @@
 
 <div style="display: flex" class="body" id="buypremium">
   <div style="margin: auto; display: block">
-    <h1 class="intro-font">GET PREMIUM NOW</h1>
+    <h1 class="intro-font" style="margin-bottom: 50px;">GET PREMIUM NOW</h1>
+
+    <div class="paymentbox">
+      <h1>Spotify Premium</h1>
+      <p>59000₫/month after free month. Cancel anytime.</p>
+      <img style="width: 17vw;" src="https://campaigns.scdn.co/images/momo_new.png">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option value="option1">1 Day</mat-option>
+          <mat-option value="option2">7 Days</mat-option>
+          <mat-option value="option3">1 Month</mat-option>
+          <mat-option value="option4">3 Months</mat-option>
+          <mat-option value="option5">6 Months</mat-option>
+          <mat-option value="option6">1 Year</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+    </div>
   </div>
 </div>

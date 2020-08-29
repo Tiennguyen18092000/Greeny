@@ -20,7 +20,7 @@ import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbChec
 @NgModule({
   declarations: [
     AppComponent,
-  
+
   ],
   imports: [
     BrowserModule,
@@ -35,13 +35,7 @@ import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbChec
 
     HomeModule,
   ],
-  
-  providers: [],
 
-    RepasswordModule,
-    NbIconModule,
-
-  ],
   providers: [NbSidebarService],
 
   bootstrap: [AppComponent]

@@ -7,8 +7,15 @@
 }
 
 .intro-font{
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 500;
+}
+
+.nhf{
+  font-size: 2vw;
+}
+.nbt{
+  font-size: 1vw
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
@@ -112,7 +119,7 @@ path.two {
 .body{
   margin:auto;
   text-align: center;
-  height: 70%;
+  height: 100%;
 }
 
 .introitem{
@@ -128,3 +135,89 @@ img{
   margin-top: 20%;
 }
 
+.paymentbox{
+  text-align: center;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border: 15px solid #6225E6;
+  padding: 50px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px){
+  .intro-font{
+    font-size: 7vw;
+  }
+  .nhf{
+  font-size: 4vw;
+}
+.nbt{
+  font-size: 2vw
+}
+  .cta {
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+  .cta:hover {
+    box-shadow: 5px 5px 0 #FBC638;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+  .intro-font{
+    font-size: 7vw;
+  }
+  .nhf{
+  font-size: 4vw;
+}
+.nbt{
+  font-size: 2vw
+}
+  .cta {
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+  .cta:hover {
+    box-shadow: 5px 5px 0 #FBC638;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  .head{
+    width: 150%;
+  }
+  .nhf{
+    font-size: 6vw;
+  }
+  .nbt{
+    font-size: 4vw
+  }
+  .intro-font{
+    font-size: 10vw;
+  }
+  .cta {
+    font-size: 10px;
+    padding: 2px 10px;
+  }
+  .cta:hover {
+    box-shadow: 2px 2px 0 #FBC638;
+  }
+}
+
+@media only screen and (max-width: 270px){
+  .head{
+    width: 200%;
+  }
+  .nhf{
+    font-size: 8vw;
+  }
+  .nbt{
+    font-size: 6vw
+  }
+  .intro-font{
+    font-size: 15vw;
+  }
+}
