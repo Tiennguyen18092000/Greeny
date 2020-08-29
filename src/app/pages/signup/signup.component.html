@@ -1,0 +1,176 @@
+<nb-card>
+    <nb-card-body>
+        <div class="register">
+            <div class="registerHeader">
+                <div class="container">
+                    <div class="boxContent">
+                        <img class="logo" src="../../../assets/img/nền đen.png" alt="logo" width="20%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registerBody">
+            <div class="container">
+                <div class="boxContent">
+                    <div>
+                        <h2 style="text-align: center;">
+                            Sign up for free to start listening.
+                        </h2>
+                    </div>
+                    <div class="content">
+                        <a href="https://www.facebook.com/" style="color: aliceblue;">
+                            <b><div class="button buttonFacebook">Sign up with Facebook </div></b>
+
+                        </a>
+
+                    </div>
+                    <div>
+                        <strong class="line">Or</strong>
+                    </div>
+                    <br>
+                    <form name="DuLieu">
+                        <b><div style="text-align: center;">Sign up with your email address</div></b>
+
+                        <br>
+                        <div>
+
+                            <b style="text-align: start;">What's your email ?</b>
+
+                            <input class="form-control" type="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <br>
+                        <div>
+
+                            <b style="text-align: start;">Confirm your email : </b>
+
+                            <input class="form-control" type="email" name="email" placeholder="Enter your email again">
+                        </div>
+                        <br>
+                        <div>
+                            <b style="text-align: start;">Username :</b>
+                            <input class="form-control" type="name" name="name" placeholder="Username">
+                        </div>
+
+                        <br>
+                        <div>
+
+                            <b style="text-align: start;">Enter your password :</b>
+
+                            <input class="form-control" type="password" name="passwords" placeholder="Password">
+                        </div>
+                        <br>
+                        <div>
+
+                            <b style=" text-align: start; ">Confirm your password :</b>
+
+                            <input class="form-control " type="password " name="passwords " placeholder="Password ">
+                        </div>
+                        <br>
+                        <b>What's your date of birth ?</b>
+                        <div class="content ">
+                            <li>
+                                <div style="display: flex; flex-direction: row; ">
+
+                                    <div class="controlDOB controlDOB-day ">
+                                        <select id="resigter-dob-day " name="signUpDOBDay ">
+                                        <option value selected="selected ">Day</option>
+                                        <option value="01 ">1</option>
+                                        <option value="02 ">2</option>
+                                        <option value="03 ">3</option>
+                                        <option value="04 ">4</option>
+                                        <option value="05 ">5</option>
+                                        <option value="06 ">6</option>
+                                        <option value="07 ">7</option>
+                                        <option value="08 ">8</option>
+                                        <option value="09 ">9</option>
+                                        <option value="10 ">10</option>
+                                        <option value="11 ">11</option>
+                                        <option value="12 ">12</option>
+                                        <option value="13 ">13</option>
+                                        <option value="14 ">14</option>
+                                        <option value="15 ">15</option>
+                                        <option value="16 ">16</option>
+                                        <option value="17 ">17</option>
+                                        <option value="18 ">18</option>
+                                        <option value="19 ">19</option>
+                                        <option value="20 ">20</option>
+                                        <option value="21 ">21</option>
+                                        <option value="22 ">22</option>
+                                        <option value="23 ">23</option>
+                                        <option value="24 ">24</option>
+                                        <option value="25 ">25</option>
+                                        <option value="26 ">26</option>
+                                        <option value="27 ">27</option>
+                                        <option value="28 ">28</option>
+                                        <option value="29 ">29</option>
+                                        <option value="30 ">30</option>
+                                        <option value="31 ">31</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="controlDOB controlDOB-month ">
+                                        <select id="resigter-dob-month " name="signUpDOBMonth ">
+                                        <option value selected="selected ">Month</option>
+                                        <option value="01 ">January</option>
+                                        <option value="02 ">February</option>
+                                        <option value="03 ">March</option>
+                                        <option value="04 ">April</option>
+                                        <option value="05 ">May</option>
+                                        <option value="06 ">June</option>
+                                        <option value="07 ">July</option>
+                                        <option value="08 ">August</option>
+                                        <option value="09 ">September</option>
+                                        <option value="10 ">October</option>
+                                        <option value="11 ">November</option>
+                                        <option value="12 ">December</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="controlDOB controlDOB-year ">
+                                        <input type="number " id="resigter-dob-year " name="signUpDOBYear " style="box-sizing: border-box; width: auto; height: 50px; " placeholder="Year ">
+                                    </div>
+                                </div>
+                            </li>
+
+                        </div>
+                        <div>
+                            <nb-checkbox (checkedChange)="toggle($event)"></nb-checkbox>
+                            <b for="remember-me "> Share my registration data with Grenny's content  </b>
+                            <b for="remember-me " style="margin-left: 18px; ">providers for marketing purposes.</b>
+                        </div>
+                        <div class="register ">
+                            <div class="registerHeader ">
+                                <div class="container " style="text-align: center; ">
+                                    <div class="boxContent ">
+                                        <p style="color:black; font-size: 0.75em; "> <br> By clicking on Sign up, you agree to Grenny's
+                                            <a href=" " target="_blank "> Terms and Conditions of Use.</a><br><br> To learn more about how Spotify collects, uses, shares and protects your personal data please read Grenny's
+                                            <a href=" " target="_blank "> Privacy Policy.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dangky " style="text-align: center; ">
+                            <div class="dangky dangkymau " type="submit ">Sign up</div>
+                        </div>
+
+
+                    </form>
+                    <div style="text-align: center; ">
+                        <h5>
+                            Have an account ?
+                            <u>
+                        <a href="../signin/signin.component.html ">
+                            Login
+                        </a>
+                    </u>.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nb-card-body>
+
+</nb-card>
