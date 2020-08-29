@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
+
+import { HomeModule } from './pages/home/home.module'
+
 import {RepasswordModule} from './pages/repassword/repassword.module'
 import { NebularModule } from './nebular/nebular.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NbIconModule } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule } from '@nebular/theme';
+
 
 
 @NgModule({
@@ -28,11 +32,18 @@ import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbChec
     NbEvaIconsModule,
     NbCheckboxModule,
     ComponentsModule,
+
+    HomeModule,
+  ],
+  
+  providers: [],
+
     RepasswordModule,
     NbIconModule,
 
   ],
   providers: [NbSidebarService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

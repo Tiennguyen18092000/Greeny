@@ -29,7 +29,7 @@ var ComponentsModule = /** @class */ (function () {
                 menu_1.MatMenuModule,
             ],
             exports: [
-                nav_bar_component_1.NavBarComponent
+                nav_bar_component_1.NavBarComponent,
             ]
         })
     ], ComponentsModule);

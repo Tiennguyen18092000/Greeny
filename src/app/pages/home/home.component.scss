@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.in{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-family: 'Russo One', sans-serif;
+    font-size: 95px;
+    text-align:center;
+    vertical-align: inherit;
+    line-height: 1;
+    align-items: center;
+}
+@media only screen and (max-width: 500px){
+    .text{
+        font-family: 'Russo One', sans-serif;
+        font-size: 200%;
+        text-align:center;
+        vertical-align: inherit;
+        line-height: 1;
+        align-items: center;
+    }
+}
