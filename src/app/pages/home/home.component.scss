@@ -12,6 +12,12 @@
     line-height: 1;
     align-items: center;
 }
+.dia{
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width: 500px){
     .text{
         font-family: 'Russo One', sans-serif;
@@ -19,6 +25,14 @@
         text-align:center;
         vertical-align: inherit;
         line-height: 1;
+        align-items: center;
+    }
+    .dia{
+        font-family: 'Russo One', sans-serif;
+        font-size: 100%;
+        display: flex;
+        // justify-content: center;
+        text-align: center;
         align-items: center;
     }
 }
