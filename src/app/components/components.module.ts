@@ -12,6 +12,8 @@ import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
+
+
   declarations: [NavBarComponent, SideBarComponent,],
   imports: [
     CommonModule,
