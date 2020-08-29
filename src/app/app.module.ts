@@ -4,10 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule,NbCheckboxModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
 import {RepasswordModule} from './pages/repassword/repassword.module'
+import { NebularModule } from './nebular/nebular.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule } from '@nebular/theme';
 
 
 @NgModule({
@@ -18,6 +21,7 @@ import {RepasswordModule} from './pages/repassword/repassword.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
@@ -25,10 +29,10 @@ import {RepasswordModule} from './pages/repassword/repassword.module'
     NbCheckboxModule,
     ComponentsModule,
     RepasswordModule,
-    
+    NbIconModule,
 
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
