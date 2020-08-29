@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { SigninRoutingModule } from './signin-routing.module';
 import { SigninComponent } from './signin.component';
+import { NbCardModule } from '@nebular/theme';
 
 
 @NgModule({
   declarations: [SigninComponent],
   imports: [
     CommonModule,
-    SigninRoutingModule
+    SigninRoutingModule,
+    NbCardModule
   ]
 })
 export class SigninModule { }
