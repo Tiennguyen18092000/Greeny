@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+  checked = false;
+
+  toggle(checked: boolean) {
+    this.checked = checked;
+  }
 
   constructor() { }
 

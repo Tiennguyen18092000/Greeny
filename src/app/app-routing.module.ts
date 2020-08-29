@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'playlist', loadChildren: () => import('./pages/playlist/playlist.module').then(m => m.PlaylistModule) },
   { path: 'signup', loadChildren: () => import('./pages/signup/signup.module').then(m => m.SignupModule) },
   { path: 'signin', loadChildren: () => import('./pages/signin/signin.module').then(m => m.SigninModule) },
+  { path: 'repassword', loadChildren: () => import('./pages/repassword/repassword.module').then(m => m.RepasswordModule) },
 
 ];
 
