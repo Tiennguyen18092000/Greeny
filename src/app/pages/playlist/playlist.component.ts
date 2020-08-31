@@ -47,6 +47,8 @@ export class PlaylistComponent implements OnInit {
         }
       }
     });
+      
+
   }
   openFile(file, index) {
     this.cloudService.file.unshift(file);
