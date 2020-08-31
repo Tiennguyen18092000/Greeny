@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatSelectModule } from '@angular/material/select'
 
-
 @NgModule({
   declarations: [PremiumComponent],
   imports: [
@@ -18,7 +17,6 @@ import { MatSelectModule } from '@angular/material/select'
     MatButtonModule,
     MatFormFieldModule,
     MatSelectModule,
-
   ],
 })
 export class PremiumModule {}

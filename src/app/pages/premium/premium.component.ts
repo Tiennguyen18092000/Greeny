@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-premium',
@@ -14,4 +15,7 @@ export class PremiumComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+
 }
