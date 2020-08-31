@@ -7,6 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
 
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
+
+
 import { HomeModule } from './pages/home/home.module'
 
 import { NebularModule } from './nebular/nebular.module';
@@ -41,15 +47,11 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbEvaIconsModule,
     NbCheckboxModule,
     ComponentsModule,
-
-
     NbIconModule,
     NbSidebarModule,
     NbDatepickerModule,
     NbDatepickerModule.forRoot(),
     NbInputModule,
-
-
     HomeModule,
   ],
 
