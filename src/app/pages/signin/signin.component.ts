@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {AuthService} from '../../services/auth.service';
+import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService,private router: ActivatedRoute,) { }
 
   ngOnInit(): void {
+    this.router.queryParams.subscribe(params => {
+      this.router = params[''];
+    });
   }
 
 }

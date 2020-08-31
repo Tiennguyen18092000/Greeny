@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -6,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+
+
   checked = false;
 
   toggle(checked: boolean) {
     this.checked = checked;
   }
 
-  constructor() { }
+  formControl = new FormControl(new Date());
+
+  constructor(private route: ActivatedRoute,) {   
+   }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      this.route = params[''];
+    });
   }
 
 }
