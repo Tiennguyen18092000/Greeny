@@ -9,10 +9,11 @@ import {
   NbListModule,
   NbIconModule,
   NbTooltipModule,
-} from '@nebular/theme'
+} from '@nebular/theme';
+import { TrackComponent } from './track/track.component'
 
 @NgModule({
-  declarations: [PlaylistComponent],
+  declarations: [PlaylistComponent, TrackComponent],
   imports: [
     CommonModule,
     PlaylistRoutingModule,

@@ -26,6 +26,11 @@ export class SideBarComponent implements OnInit {
 
     },
     {
+      title: 'Upload',
+      icon: 'upload-outline',
+      link:['upload'],
+    },
+    {
       title: 'Playlist',
       icon: 'headphones-outline',
       children: [
