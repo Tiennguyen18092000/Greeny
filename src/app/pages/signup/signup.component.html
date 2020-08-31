@@ -1,0 +1,102 @@
+<nb-card>
+    <nb-card-body>
+        <div class="register">
+            <div class="registerHeader">
+                <div class="container">
+                    <div class="boxContent">
+                        <img class="logo" src="../../../assets/img/nền đen.png" alt="logo" width="20%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registerBody">
+            <div class="container">
+                <div class="boxContent">
+                    <div>
+                        <h2 style="text-align: center;">
+                            Sign up for free to start listening.
+                        </h2>
+                    </div>
+                    <br>
+                    <form name="DuLieu">
+                        <b><div style="text-align: center;">Sign up with your email address</div></b>
+
+                        <br>
+                        <div>
+
+                            <b style="text-align: start;">What's your email ?</b>
+
+                            <input class="form-control" type="email" nbInput fullWidth status="info" name="email" placeholder="Enter your email">
+                        </div>
+                        <br>
+                        <div>
+                            <b style="text-align: start;">Username :</b>
+                            <input class="form-control" type="name" nbInput fullWidth status="info" name="name" placeholder="Username">
+                        </div>
+
+                        <br>
+                        <div>
+
+                            <b style="text-align: start;">Enter your password :</b>
+
+                            <input class="form-control" type="password" nbInput fullWidth status="info" name="passwords" placeholder="Password">
+                        </div>
+                        <br>
+                        <div>
+
+                            <b style=" text-align: start; ">Confirm your password :</b>
+
+                            <input class="form-control " type="password " nbInput fullWidth status="info" name="passwords " placeholder="Password ">
+                        </div>
+                        <br>
+                        <b>What's your date of birth ?</b>
+                        <br>
+                        <div class="content ">
+                            <div style="display: flex; flex-direction: row;margin-left: -18px ">
+
+
+                                <input nbInput placeholder="Pick Date" status="info" [nbDatepicker]="formpicker">
+                                <nb-datepicker #formpicker></nb-datepicker>
+
+                            </div>
+                            <br>
+                            <div style="text-align: center;">
+                                <nb-checkbox (checkedChange)="toggle($event)"></nb-checkbox>
+                                <b for="remember-me "> Share my registration data with Grenny's content</b>
+                                <b for="remember-me " style="margin-left: 7px; ">providers for marketing purposes.</b>
+                            </div>
+                            <div class="register ">
+                                <div class="registerHeader ">
+                                    <div class="container " style="text-align: center; ">
+                                        <div class="boxContent ">
+                                            <p style="color:black; font-size: 0.75em; "> <br> By clicking on Sign up, you agree to Grenny's
+                                                <a href=" " target="_blank "> Terms and Conditions of Use.</a><br><br> To learn more about how Spotify collects, uses, shares and protects your personal data please read Grenny's
+                                                <a href=" " target="_blank "> Privacy Policy.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dangky " style="text-align: center; ">
+                                <div class="dangky dangkymau " type="submit ">Sign up</div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div style="text-align: center; ">
+                        <h5>
+                            Have an account ?
+                            <u>
+                        <a [routerLink]="['/signin']" routerLinkActive="active" >
+                            Login
+                        </a>
+                        </u>.
+                        </h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nb-card-body>
+</nb-card>

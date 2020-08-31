@@ -4,25 +4,29 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {
-  NbThemeModule,
-  NbLayoutModule,
-  NbSidebarModule,
-  NbSidebarService,
-  NbMenuModule,
-  NbIconModule,
-  NbDialogModule,
-  NbToastrModule,
-  NbToastrService,
-  NbInputModule
-} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
-import { AngularFireModule } from '@angular/fire';
+
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { environment } from '../environments/environment';
+
+
+
+import { HomeModule } from './pages/home/home.module'
+
+import { NebularModule } from './nebular/nebular.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule,NbDatepickerModule, NbInputModule, } from '@nebular/theme';
+
+
+import {environment} from '../environments/environment';
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 
 @NgModule({
@@ -33,23 +37,26 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
+    NebularModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
-    NbSidebarModule,
+    NbCheckboxModule,
     ComponentsModule,
-    NbMenuModule.forRoot(),
     NbIconModule,
-    NbDialogModule.forRoot(),
-    NbToastrModule.forRoot(),
+    NbSidebarModule,
+    NbDatepickerModule,
+    NbDatepickerModule.forRoot(),
     NbInputModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule, // firestore
-    AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    HomeModule,
   ],
+
   providers: [NbSidebarService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
