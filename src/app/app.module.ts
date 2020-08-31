@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ComponentsModule } from './components/components.module';
+
+import { HomeModule } from './pages/home/home.module'
+
 import { NebularModule } from './nebular/nebular.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NbIconModule } from '@nebular/theme';
@@ -19,10 +22,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-  
+
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbCheckboxModule,
     ComponentsModule,
 
+
     NbIconModule,
     NbSidebarModule,
     NbDatepickerModule,
@@ -45,11 +50,11 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbInputModule,
 
 
-
-
-
+    HomeModule,
   ],
+
   providers: [NbSidebarService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-premium',
@@ -7,10 +8,14 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./premium.component.scss']
 })
 export class PremiumComponent implements OnInit {
+  selected = 'option1';
+  constructor() {
+   }
 
-  constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

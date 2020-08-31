@@ -4,7 +4,7 @@
       <h1 style="margin-bottom: 4%" class="intro-font">
         Get Premium free for 1 month
       </h1>
-      <h1 style="font-size: 2vw">Just 59000₫/month after. Cancel anytime.</h1>
+      <h1 class="nhf">Just 59000₫/month after. Cancel anytime.</h1>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <div class="wrapper">
@@ -40,7 +40,7 @@
         </a>
       </div>
 
-      <h1 style="font-size: 1vw">
+      <h1 class="nbt">
         <a href="" style="cursor: pointer; color: white"
           ><u> Terms and conditions apply.</u></a
         >
@@ -60,20 +60,20 @@
         <img
           src="https://cdn2.iconfinder.com/data/icons/game-assets-3/300/No_Ads.png"
         />
-        <h1>No ad interruptions.</h1>
-        <h2>Enjoy nonstop music.</h2>
+        <p class="intro-item-font">No ad interruptions.</p>
+        <p class="intro-item-below-font">Enjoy nonstop music.</p>
       </div>
       <div>
         <img
           src="https://i.pinimg.com/564x/48/02/a7/4802a75ce787530a632080c3df8a8f97.jpg"
         />
-        <h1>Play any song.</h1>
-        <h2>Even on mobile.</h2>
+        <p class="intro-item-font">Play any song.</p>
+        <p class="intro-item-below-font">Even on mobile.</p>
       </div>
       <div>
         <img src="https://img.icons8.com/bubbles/2x/video-playlist.png" />
-        <h1>List of premium music</h1>
-        <h2>Unlimited</h2>
+        <p class="intro-item-font">List of premium music</p>
+        <p class="intro-item-below-font">Unlimited</p>
       </div>
     </div>
   </div>
@@ -81,6 +81,30 @@
 
 <div style="display: flex" class="body" id="buypremium">
   <div style="margin: auto; display: block">
-    <h1 class="intro-font">GET PREMIUM NOW</h1>
+    <h1 class="intro-font" style="margin-bottom: 50px;">GET PREMIUM NOW</h1>
+
+    <div class="paymentbox">
+      <p class="intro-item-font">Spotify Premium</p>
+      <p class="intro-item-below-font">59000₫/month after free month. Cancel anytime.</p>
+      <img class="imginbox" src="https://campaigns.scdn.co/images/momo_new.png">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option value="option1">1 Day</mat-option>
+          <mat-option value="option2">7 Days</mat-option>
+          <mat-option value="option3">1 Month</mat-option>
+          <mat-option value="option4">3 Months</mat-option>
+          <mat-option value="option5">6 Months</mat-option>
+          <mat-option value="option6">1 Year</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div style="margin-top: 10%;" class="pay"><a class="btnfont paybtn" href="#">hover me</a></div>
+
+    </div>
   </div>
 </div>
+
+
+<div style="margin-top: 10%;" class="pay"><a class="btnfont paybtn" href="#">hover me</a></div>

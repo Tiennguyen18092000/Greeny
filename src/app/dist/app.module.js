@@ -14,6 +14,7 @@ var app_component_1 = require("./app.component");
 var animations_1 = require("@angular/platform-browser/animations");
 var theme_1 = require("@nebular/theme");
 var components_module_1 = require("./components/components.module");
+var home_module_1 = require("./pages/home/home.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -29,6 +30,7 @@ var AppModule = /** @class */ (function () {
                 theme_1.NbThemeModule.forRoot({ name: 'default' }),
                 theme_1.NbLayoutModule,
                 components_module_1.ComponentsModule,
+                home_module_1.HomeModule,
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
