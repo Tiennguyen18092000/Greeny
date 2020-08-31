@@ -25,9 +25,9 @@
                     </div>
                     <form name="DuLieu">
                         <div id="error"></div>
-                        <div><input id="name" class="form-control" type="email" name="email" placeholder="Email or Username" required>
+                        <div><input id="name" class="form-control" type="email" nbInput fullWidth status="success" name="email" placeholder="Email or Username" required>
                         </div>
-                        <div><input id="password" class="form-control" type="password" name="passwords" placeholder="Password">
+                        <div><input id="password" class="form-control" type="password" nbInput fullWidth status="success" name="passwords" placeholder="Password" required>
                         </div>
                         <div style=" justify-content: start; float: left;">
                             <input type="checkbox" id="remember-me" name="Remember Password" value="Remember Password">
@@ -52,17 +52,11 @@
                         </div>
                     </form>
                     <div>
-                        <div class="content">
-                            <a href="https://www.facebook.com/" style="color: aliceblue;">
-                                <div class="button buttonFacebook">Login with Facebook </div>
-                            </a>
-
-                        </div>
 
                         <div class="content">
-                            <a href="https://accounts.google.com/" style="color: aliceblue;">
-                                <div class="button buttonGoogle">Login with Google</div>
-                            </a>
+                            <button *ngIf="authService.user==null " (click)='this.authService.login()' class="button buttonGoogle" style="color: black;">
+                                <img src="../../../assets/img/brands-and-logotypes.svg" class="sign-in-button" alt="Google" width="20px" height="20px" style="width: 24.8vw;" style="margin-right: 20px; margin-bottom: -3px;" >Login With <span style="color:#4285F4 ;">G</span> <span style="color: #DB4437;">o</span> <span style="color: #F4B400;">o</span> <span style="color: #4285F4;">g</span> <span style="color: #0F9D58;">l</span> <span style="color: #DB4437;">e</span>
+                            </button>
                         </div>
 
                     </div>
@@ -74,7 +68,7 @@
                                 <b><div style="text-align: center;">Don't have an account?</div></b>
                                 <br>
                                 <div class="login">
-                                    <a href="../signup/signup.component.html">
+                                    <a [routerLink]="['/signup']" routerLinkActive="active">
                                         <div class="login logindangnhap" type="submit">Sign up for Grenny</div>
                                     </a>
                                 </div>
@@ -89,7 +83,7 @@
             <div class="signUpHeader">
                 <div class="container">
                     <div class="boxContent">
-                        <p style="color:black; font-size: 0.75em;"> <br> If you click "Login with Facebook" and aren't a Grenny user, you will be registered and you agree to Grenny's
+                        <p style="color:black; font-size: 0.75em;"> <br> If you click "Login with Google" and aren't a Grenny user, you will be registered and you agree to Grenny's
                             <a href="" target="_blank"> Terms & Conditions</a>
                             <br> and
                             <a href="" target="_blank"> Privacy Policy.</a>

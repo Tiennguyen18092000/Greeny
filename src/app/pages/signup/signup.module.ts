@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SignupRoutingModule } from './signup-routing.module';
 import { SignupComponent } from './signup.component';
-import { NbCardModule,NbCheckboxModule } from '@nebular/theme';
+import { NbCardModule,NbCheckboxModule,NbDatepickerModule,NbInputModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [SignupComponent],
@@ -11,7 +11,10 @@ import { NbCardModule,NbCheckboxModule } from '@nebular/theme';
     CommonModule,
     SignupRoutingModule,
     NbCardModule,
-    NbCheckboxModule
+    NbCheckboxModule,
+    NbDatepickerModule.forRoot(),
+    NbDatepickerModule,
+    NbInputModule,
   ]
 })
 export class SignupModule { }
