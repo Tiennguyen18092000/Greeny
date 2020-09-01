@@ -29,7 +29,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { LoginComponent } from './header/login/login.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +42,9 @@ import {MatMenuModule} from '@angular/material/menu';
     LogoComponent,
     SearchComponent,
     MenuComponent,
+    LoginComponent,
+
+
     ],
   imports: [
     CommonModule,
