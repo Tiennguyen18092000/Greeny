@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clone-7d301": {
+      "hosting": {
+        "Greeny": [
+          "clone-7d301"
+        ]
+      }
+    }
+  }
+}

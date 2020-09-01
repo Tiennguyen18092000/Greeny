@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { SigninRoutingModule } from './signin-routing.module';
 import { SigninComponent } from './signin.component';
-import { NbCardModule } from '@nebular/theme';
+import { NbCardModule,NbInputModule,NbIconModule  } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 
 @NgModule({
@@ -11,7 +12,7 @@ import { NbCardModule } from '@nebular/theme';
   imports: [
     CommonModule,
     SigninRoutingModule,
-    NbCardModule
+    NbCardModule,NbInputModule,NbEvaIconsModule,NbIconModule ,
   ]
 })
 export class SigninModule { }

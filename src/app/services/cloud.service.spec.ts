@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DataUserService } from './data-user.service';
+import { CloudService } from './cloud.service';
 
-describe('DataUserService', () => {
-  let service: DataUserService;
+describe('CloudService', () => {
+  let service: CloudService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DataUserService);
+    service = TestBed.inject(CloudService);
   });
 
   it('should be created', () => {
