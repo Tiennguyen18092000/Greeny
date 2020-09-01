@@ -17,7 +17,7 @@ import { HomeModule } from './pages/home/home.module'
 
 import { NebularModule } from './nebular/nebular.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NbIconModule } from '@nebular/theme';
+import { NbIconModule, NbMenuModule } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule,NbDatepickerModule, NbInputModule, } from '@nebular/theme';
 
 
@@ -53,6 +53,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbDatepickerModule.forRoot(),
     NbInputModule,
     HomeModule,
+    NbMenuModule.forRoot()
   ],
 
   providers: [NbSidebarService],
