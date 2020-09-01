@@ -1,11 +1,21 @@
-<nb-layout>
+<!-- <nb-layout>
 
-<!-- <app-nav-bar></app-nav-bar> -->
-<nb-layout>
-        <nb-layout-column>
-            <router-outlet></router-outlet>
-        </nb-layout-column>
-    </nb-layout>
+    <nb-layout-header fixed>
+        <app-header></app-header>
+    </nb-layout-header>
 
+    <nb-sidebar [state]="'compacted'" reponsive="true">
+        <app-side-bar></app-side-bar>
+    </nb-sidebar>
 
+    <nb-layout-column>
+    
+    </nb-layout-column>
 
+    <nb-layout-footer fixed>
+        <app-footer></app-footer>
+    </nb-layout-footer>
+
+</nb-layout> -->
+
+<router-outlet></router-outlet>

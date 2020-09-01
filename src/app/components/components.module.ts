@@ -62,6 +62,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
    MatMenuModule,
+    NbToggleModule,
+    MatToolbarModule
+
 
   ],
   exports: [
@@ -70,8 +73,6 @@ import {MatMenuModule} from '@angular/material/menu';
     FooterComponent,
     NavBarComponent, 
     CommonModule,
-   
-  
   ]
 })
 export class ComponentsModule { }
