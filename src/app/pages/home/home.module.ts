@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    ComponentsModule
   ]
 })
 export class HomeModule { }

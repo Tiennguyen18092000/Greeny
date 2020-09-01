@@ -8,12 +8,8 @@ import {  Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class SigninComponent implements OnInit {
 
-  constructor(public authService: AuthService,private router: ActivatedRoute,) { }
+  constructor(public authService: AuthService,public router: Router,) { }
 
-  ngOnInit(): void {
-    this.router.queryParams.subscribe(params => {
-      this.router = params[''];
-    });
-  }
+  ngOnInit(): void {}
 
 }
