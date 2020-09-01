@@ -1,11 +1,15 @@
 <nb-card>
     <nb-card-body>
 
-        <div class="boxContent">
-            <button (click)="router.navigate(['home'])">
+        <div class="boxContent" style="display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center !important;">
+            <button (click)="router.navigate(['home'])" style="background-color: white; border: white">
                 <img class="logo" src="../../../assets/img/nền đen.png" alt="logo" width="20%" />   
             </button>
         </div>
+        <br>
 
 
         <div class="signUpBody">
@@ -47,7 +51,7 @@
                     <div>
 
                         <div class="content">
-                            <button *ngIf="authService.user==null " (click)='this.authService.login()' class="button buttonGoogle" style="color: black;">
+                            <button class="button buttonGoogle" style="color: black;" (click)="loginWithGoogle()">
                                 <img src="../../../assets/img/brands-and-logotypes.svg" class="sign-in-button" alt="Google" width="20px" height="20px" style="width: 24.8vw;" style="margin-right: 20px; margin-bottom: -3px;" >Login With <span style="color:#4285F4 ;">G</span> <span style="color: #DB4437;">o</span> <span style="color: #F4B400;">o</span> <span style="color: #4285F4;">g</span> <span style="color: #0F9D58;">l</span> <span style="color: #DB4437;">e</span>
                             </button>
                         </div>

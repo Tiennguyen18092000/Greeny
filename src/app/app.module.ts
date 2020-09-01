@@ -11,7 +11,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { HomeModule } from './pages/home/home.module'
 import { NebularModule } from './nebular/nebular.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NbIconModule, NbMenuModule } from '@nebular/theme';
+import { NbIconModule, NbMenuModule, NbToastrModule, NbToastrService } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule,NbDatepickerModule, NbInputModule, } from '@nebular/theme';
 
 import {environment} from '../environments/environment';
@@ -43,10 +43,11 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbDatepickerModule.forRoot(),
     NbInputModule,
     HomeModule,
-    NbMenuModule.forRoot()
+    NbMenuModule.forRoot(),
+    NbToastrModule.forRoot(),
   ],
 
-  providers: [NbSidebarService],
+  providers: [NbSidebarService,NbToastrService],
 
   bootstrap: [AppComponent]
 })
