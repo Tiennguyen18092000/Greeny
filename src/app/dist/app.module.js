@@ -15,7 +15,6 @@ var animations_1 = require("@angular/platform-browser/animations");
 var eva_icons_1 = require("@nebular/eva-icons");
 var components_module_1 = require("./components/components.module");
 var home_module_1 = require("./pages/home/home.module");
-var nebular_module_1 = require("./nebular/nebular.module");
 var forms_1 = require("@angular/forms");
 var theme_1 = require("@nebular/theme");
 var environment_1 = require("../environments/environment");
@@ -35,7 +34,6 @@ var AppModule = /** @class */ (function () {
                 fire_1.AngularFireModule,
                 forms_1.ReactiveFormsModule,
                 animations_1.BrowserAnimationsModule,
-                nebular_module_1.NebularModule,
                 theme_1.NbThemeModule.forRoot({ name: 'default' }),
                 theme_1.NbLayoutModule,
                 eva_icons_1.NbEvaIconsModule,

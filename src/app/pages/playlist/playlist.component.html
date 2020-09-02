@@ -1,16 +1,4 @@
-<!-- <nb-card size="tiny" class="container">
-    <nb-card-body>
-        <h5>Ranking</h5>
-        <p>{{file.length}} Postions</p>
-    </nb-card-body>
 
-    <div class="card-row" *ngIf="headerFiles">
-        <div class="card-col" *ngFor="let music of headerFiles">
-            <img [src]="music.imgURL" class="header-image box-shadow" (click)="openFile(cloudService.index)">
-        </div>
-    </div>
-
-</nb-card> -->
 <nb-layout>
 
   <nb-layout-header fixed>
@@ -22,7 +10,19 @@
   </nb-sidebar>
 
   <nb-layout-column>
+    <nb-card size="tiny" class="container">
+      <nb-card-body>
+          <h5>Ranking</h5>
+          <p>{{file.length}} Postions</p>
+      </nb-card-body>
 
+      <div class="card-row" *ngIf="headerFiles">
+          <div class="card-col" *ngFor="let music of headerFiles">
+              <img [src]="music.imgURL" class="header-image box-shadow" (click)="openFile(cloudService.index)">
+          </div>
+      </div>
+
+  </nb-card>
   </nb-layout-column>
 
   <nb-layout-footer fixed>
