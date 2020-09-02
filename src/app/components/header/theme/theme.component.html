@@ -1,4 +1,6 @@
-<button nbButton [nbContextMenu]="items" nbContextMenuTag="my-context-menu" status="primary" hero>
+<!-- <button nbButton [nbContextMenu]="items" nbContextMenuTag="my-context-menu" status="primary" hero>
     {{selectedItem}}
   </button>
-  
+   -->
+
+   <nb-toggle  class="toggle" status="basic" (checkedChange)="changeTheme($event)"></nb-toggle>

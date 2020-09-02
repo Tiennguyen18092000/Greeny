@@ -18,21 +18,21 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.nbMenuService.onItemClick()
-    .pipe(
-      filter(({ tag }) => tag === 'my-context-menu'),
-      map(({ item: { title } }) => title),
-    )
-    .subscribe(title => this.window.alert(`${title} was clicked!`));
+    // this.nbMenuService.onItemClick()
+    // .pipe(
+    //   filter(({ tag }) => tag === 'my-context-menu'),
+    //   map(({ item: { title } }) => title),
+    // )
+    // .subscribe(title => this.window.alert(`${title} was clicked!`));
   }
 
-  items = [
-    { title: 'Profile' },
-    { title: 'Logout' },
-  ];
+  // items = [
+  //   { title: 'Profile' },
+  //   { title: 'Logout' },
+  // ];
 
 
-  
+
 
 
 }

@@ -43,8 +43,6 @@ import { LoginComponent } from './header/login/login.component';
     SearchComponent,
     MenuComponent,
     LoginComponent,
-
-
     ],
   imports: [
     CommonModule,
@@ -64,17 +62,15 @@ import { LoginComponent } from './header/login/login.component';
     NbToggleModule, MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-   MatMenuModule,
+    MatMenuModule,
     NbToggleModule,
     MatToolbarModule
-
-
   ],
   exports: [
     HeaderComponent,
     SideBarComponent,
     FooterComponent,
-    NavBarComponent, 
+    NavBarComponent,
     CommonModule,
   ]
 })
