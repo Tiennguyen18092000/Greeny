@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 .In{
     background-color:rgb(45, 70, 185);
     height: 75vh;
     
     
 }
-.btn-dowload{
+.btn-download{
+    font-family: 'Russo One', sans-serif;
     padding: 16px 40px 16px;
     border-radius: 40px;
     display: flex;
@@ -36,13 +37,76 @@
     justify-content: center;
     line-height: 2.5;
 }
-@media only screen and (max-width: 700px){
+.image2{
+    width: 12%;
+    margin: 0 0 0 20px;
+}
+
+.name{
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-around;
+    color: grey;
+    flex: 1% 0 0%;
+}
+
+
+
+
+
+
+// @media only screen and( max-width: 290px){
+//     .text{
+//         font-family: 'Russo One', sans-serif;
+//         font-size: 20%;
+//         text-align:center;
+//         vertical-align: inherit;
+//         line-height: 0.5;
+//         align-items: center;
+//     }
+//     .In{
+//         background-color:rgb(45, 70, 185);
+//         height: 100vh;
+//     }
+//     .dia{
+//         font-family: 'Russo One', sans-serif;
+//         font-size: 20%;
+//         display: flex;
+//         justify-content: center;
+//         text-align: center;
+//         align-items: center;
+//     }
+//     .btn-download{
+      
+//         padding: 1% 1% 1% 1%;
+//         border-radius: 40px;
+//         display: flex;
+//         margin: 0 auto;
+//         background: #0AD552;
+    
+//     }
+// }
+
+
+
+@media only screen and (max-width: 800px){
+    .image2 {
+        width: 25%;
+   }
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
     .text{
         font-family: 'Russo One', sans-serif;
-        font-size: 200%;
+        font-size: 250%;
         text-align:center;
         vertical-align: inherit;
-        line-height: 2;
+        line-height: 1.4;
         align-items: center;
     }
     .dia{
@@ -54,17 +118,19 @@
         align-items: center;
     }
     
-    .btn-dowload{
+    .btn-download{
       
         padding: 1% 1% 1% 1%;
         border-radius: 40px;
         display: flex;
         margin: 0 auto;
         background: #0AD552;
+      
     
     }
     .In{
         background-color:rgb(45, 70, 185);
         height: 60vh;
     }
+    
 }

@@ -29,6 +29,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { Footer123Component } from './footer123/footer123.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {MatMenuModule} from '@angular/material/menu';
     LogoComponent,
     SearchComponent,
     MenuComponent,
+    Footer123Component,
     ],
   imports: [
     CommonModule,
@@ -73,6 +75,7 @@ import {MatMenuModule} from '@angular/material/menu';
     FooterComponent,
     NavBarComponent, 
     CommonModule,
+    Footer123Component
   ]
 })
 export class ComponentsModule { }

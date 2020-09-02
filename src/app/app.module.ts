@@ -9,7 +9,7 @@ import { ComponentsModule } from './components/components.module';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { HomeModule } from './pages/home/home.module'
-import { NebularModule } from './nebular/nebular.module';
+// import { NebularModule } from './nebular/nebular.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NbIconModule, NbMenuModule } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbSidebarService,NbCheckboxModule,NbDatepickerModule, NbInputModule, } from '@nebular/theme';
@@ -19,9 +19,11 @@ import {environment} from '../environments/environment';
 // must be listed before other Firebase SDKs
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+
 @NgModule({
   declarations: [
     AppComponent,
+    
 
   ],
   imports: [
@@ -31,7 +33,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     AngularFireModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    NebularModule,
+    // NebularModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
@@ -43,7 +45,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbDatepickerModule.forRoot(),
     NbInputModule,
     HomeModule,
-    NbMenuModule.forRoot()
+    NbMenuModule.forRoot(),
+   
   ],
 
   providers: [NbSidebarService],
