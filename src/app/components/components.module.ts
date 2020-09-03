@@ -30,7 +30,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+
+import { Footer123Component } from './footer123/footer123.component';
+import * as gridList from '@angular/material/grid-list';
+
 import { LoginComponent } from './header/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +48,7 @@ import { LoginComponent } from './header/login/login.component';
     LogoComponent,
     SearchComponent,
     MenuComponent,
+    Footer123Component,
     LoginComponent,
     ],
   imports: [
@@ -65,6 +71,8 @@ import { LoginComponent } from './header/login/login.component';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    NbToggleModule,
+    gridList.MatGridListModule
 
   ],
   exports: [
@@ -73,6 +81,7 @@ import { LoginComponent } from './header/login/login.component';
     FooterComponent,
     NavBarComponent,
     CommonModule,
+    Footer123Component
   ]
 })
 export class ComponentsModule { }

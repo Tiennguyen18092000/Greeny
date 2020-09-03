@@ -15,9 +15,19 @@ var animations_1 = require("@angular/platform-browser/animations");
 var eva_icons_1 = require("@nebular/eva-icons");
 var components_module_1 = require("./components/components.module");
 var home_module_1 = require("./pages/home/home.module");
+
+// import { NebularModule } from './nebular/nebular.module';
+var forms_1 = require("@angular/forms");
+var theme_1 = require("@nebular/theme");
+var theme_2 = require("@nebular/theme");
+var environment_1 = require("../environments/environment");
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+
 var forms_1 = require("@angular/forms");
 var theme_1 = require("@nebular/theme");
 var environment_1 = require("../environments/environment");
+
 var fire_1 = require("@angular/fire");
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -34,6 +44,23 @@ var AppModule = /** @class */ (function () {
                 fire_1.AngularFireModule,
                 forms_1.ReactiveFormsModule,
                 animations_1.BrowserAnimationsModule,
+
+                // NebularModule,
+                theme_2.NbThemeModule.forRoot({ name: 'default' }),
+                theme_2.NbLayoutModule,
+                eva_icons_1.NbEvaIconsModule,
+                theme_2.NbCheckboxModule,
+                components_module_1.ComponentsModule,
+                theme_1.NbIconModule,
+                theme_2.NbSidebarModule,
+                theme_2.NbDatepickerModule,
+                theme_2.NbDatepickerModule.forRoot(),
+                theme_2.NbInputModule,
+                home_module_1.HomeModule,
+                theme_1.NbMenuModule.forRoot()
+            ],
+            providers: [theme_2.NbSidebarService],
+
                 theme_1.NbThemeModule.forRoot({ name: 'default' }),
                 theme_1.NbLayoutModule,
                 eva_icons_1.NbEvaIconsModule,
@@ -49,6 +76,7 @@ var AppModule = /** @class */ (function () {
                 theme_1.NbToastrModule.forRoot(),
             ],
             providers: [theme_1.NbSidebarService, theme_1.NbToastrService],
+
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
