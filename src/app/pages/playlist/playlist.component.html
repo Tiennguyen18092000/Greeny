@@ -9,24 +9,15 @@
 
     <nb-layout-column>
         <nb-card size="tiny" class="container">
-            
-                <h5>Ranking</h5>
+
+                <h5>List</h5>
                 <p>{{file.length}} Postions</p>
-            
+
             <div class="card-row" *ngIf="headerFiles">
                 <div class="card-col" *ngFor="let music of headerFiles">
                     <img [src]="music.imgURL" class="header-image box-shadow" (click)="openFile(cloudService.index)">
                 </div>
             </div>
-            <div class="card-row">
-                <div class="card-col" *ngFor="let file of headerFiles">
-                    <img [src]="file.imgURL" class="header-image box-shadow"
-                        (click)="openFile(file, cloudService.index)">
-                </div>
-            </div>
-
-            <h5>New Played</h5>
-            <p>{{file.length}} Postions</p>
 
             <nb-list listenWindowScroll="true" class="list-items">
                 <nb-list-item class="tracks" *ngFor="let file of file">
