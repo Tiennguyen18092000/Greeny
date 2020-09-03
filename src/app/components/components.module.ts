@@ -30,6 +30,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { Footer123Component } from './footer123/footer123.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { Footer123Component } from './footer123/footer123.component';
     MatButtonModule,
    MatMenuModule,
     NbToggleModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule
 
 
   ],
