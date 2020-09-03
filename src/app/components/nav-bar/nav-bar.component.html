@@ -1,12 +1,13 @@
 <div class="nav">
     <mat-toolbar class="mat-elevation-z6" style="background-color: #263238; position: fixed;">
-        <img src="../../../assets/002.png" style="width: 12%;">
+        <img class="image" src="../../../assets/img/002.png"  >
         <span class="example-spacer"></span>
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
         <div class="menu">
             <button mat-button class="bnt1" (click)="router.navigate(['premium'])">Premium</button>
             <button mat-button class="bnt1" (click)="router.navigate(['playlist'])"> Play Music</button>
+            |
             <button mat-button class="bnt1" (click)="router.navigate(['signin'])">Sign In</button>
             <button mat-button class="bnt1" (click)="router.navigate(['signup'])">Sign Up</button>
 
