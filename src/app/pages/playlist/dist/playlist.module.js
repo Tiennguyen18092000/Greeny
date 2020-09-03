@@ -30,9 +30,8 @@ var PlaylistModule = /** @class */ (function () {
                 theme_1.NbTooltipModule,
                 theme_1.NbLayoutModule,
                 components_module_1.ComponentsModule,
-                theme_1.NbSidebarService
-            ],
-            providers: [theme_1.NbSidebarService]
+                theme_1.NbSidebarModule,
+            ]
         })
     ], PlaylistModule);
     return PlaylistModule;

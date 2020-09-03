@@ -57,12 +57,11 @@ var ComponentsModule = /** @class */ (function () {
                 theme_1.NbListModule,
                 theme_1.NbInputModule,
                 theme_1.NbTooltipModule,
-                theme_1.NbToggleModule, toolbar_1.MatToolbarModule,
+                theme_1.NbToggleModule,
+                toolbar_1.MatToolbarModule,
                 icon_1.MatIconModule,
                 button_1.MatButtonModule,
                 menu_1.MatMenuModule,
-                theme_1.NbToggleModule,
-                toolbar_1.MatToolbarModule
             ],
             exports: [
                 header_component_1.HeaderComponent,

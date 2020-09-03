@@ -10,7 +10,8 @@ import {
   NbIconModule,
   NbTooltipModule,
   NbLayoutModule,
-  NbSidebarModule
+  NbSidebarModule,
+  NbThemeModule
 } from '@nebular/theme';
 import { TrackComponent } from './track/track.component'
 import { ComponentsModule } from 'src/app/components/components.module';
@@ -27,7 +28,7 @@ import { ComponentsModule } from 'src/app/components/components.module';
     NbTooltipModule,
     NbLayoutModule,
     ComponentsModule,
-    NbSidebarModule
+    NbSidebarModule,
   ],
 })
 export class PlaylistModule { }

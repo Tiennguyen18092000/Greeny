@@ -17,7 +17,8 @@ import {
   NbListModule,
   NbInputModule,
   NbTooltipModule,
-  NbToggleModule
+  NbToggleModule,
+  NbThemeModule
 } from '@nebular/theme';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './header/header.component';
@@ -59,12 +60,12 @@ import { LoginComponent } from './header/login/login.component';
     NbListModule,
     NbInputModule,
     NbTooltipModule,
-    NbToggleModule, MatToolbarModule,
+    NbToggleModule,
+    MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    NbToggleModule,
-    MatToolbarModule
+
   ],
   exports: [
     HeaderComponent,
