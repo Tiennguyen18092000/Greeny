@@ -77,7 +77,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatGridListModule,
     MatToolbarModule,
-  
 
   ],
   exports: [

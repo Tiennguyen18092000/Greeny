@@ -9,12 +9,12 @@ export class UploadImageComponent implements OnInit {
 
   isHovering: boolean;
   file : File[] = [];
-  @Output() 
+  @Output()
   imgFiles = new EventEmitter<File[]>();
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   toggleHover(event: boolean) {
