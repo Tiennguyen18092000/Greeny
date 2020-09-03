@@ -35,6 +35,7 @@ import { Footer123Component } from './footer123/footer123.component';
 import * as gridList from '@angular/material/grid-list';
 
 import { LoginComponent } from './header/login/login.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -72,7 +73,11 @@ import { LoginComponent } from './header/login/login.component';
     MatButtonModule,
     MatMenuModule,
     NbToggleModule,
-    gridList.MatGridListModule
+
+    MatToolbarModule,
+    MatGridListModule,
+    MatToolbarModule,
+  
 
   ],
   exports: [
