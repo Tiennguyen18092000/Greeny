@@ -55,13 +55,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     NbInputModule,
     HomeModule,
     NbMenuModule.forRoot(),
-
     NbToastrModule.forRoot(),
-
   ],
-
   providers: [NbSidebarService,NbToastrService],
-
   bootstrap: [AppComponent]
 })
 export class AppModule { }

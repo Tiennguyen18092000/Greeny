@@ -17,7 +17,8 @@ import {
   NbListModule,
   NbInputModule,
   NbTooltipModule,
-  NbToggleModule
+  NbToggleModule,
+  NbThemeModule
 } from '@nebular/theme';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './header/header.component';
@@ -31,9 +32,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 
 import { Footer123Component } from './footer123/footer123.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import * as gridList from '@angular/material/grid-list';
 
 import { LoginComponent } from './header/login/login.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -47,11 +49,8 @@ import { LoginComponent } from './header/login/login.component';
     LogoComponent,
     SearchComponent,
     MenuComponent,
-
     Footer123Component,
-
     LoginComponent,
-
     ],
   imports: [
     CommonModule,
@@ -68,7 +67,8 @@ import { LoginComponent } from './header/login/login.component';
     NbListModule,
     NbInputModule,
     NbTooltipModule,
-    NbToggleModule, MatToolbarModule,
+    NbToggleModule,
+    MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
