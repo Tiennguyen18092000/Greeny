@@ -9,8 +9,11 @@ import {
   NbListModule,
   NbIconModule,
   NbTooltipModule,
+  NbLayoutModule,
+  NbSidebarModule
 } from '@nebular/theme';
 import { TrackComponent } from './track/track.component'
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   declarations: [PlaylistComponent, TrackComponent],
@@ -22,6 +25,9 @@ import { TrackComponent } from './track/track.component'
     NbListModule,
     NbIconModule,
     NbTooltipModule,
-  ]
+    NbLayoutModule,
+    ComponentsModule,
+    NbSidebarModule
+  ],
 })
 export class PlaylistModule { }

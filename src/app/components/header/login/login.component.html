@@ -1,0 +1,25 @@
+<div *ngIf="authService.user$ | async; then authenticated">
+</div>
+
+<!-- <ng-template #guest>
+    <button nbTooltip="Login with Google" nbTooltipIcon="google-outline" nbTooltipPlacement="start" nbTooltipStatus="primary" status="primary" hero>
+    Login
+  </button>
+</ng-template> -->
+
+<ng-template #authenticated>
+    <div *ngIf="authService.user$ | async as user">
+        <nb-user size="large"
+         name={{user.displayName}}
+         title={{user.email}}
+         picture={{user.photoURL}}
+
+         nbContextMenuTag="my-context-menu"
+         onlyPicture>
+        </nb-user>
+    </div>
+
+
+</ng-template>
+
+<!-- [nbContextMenu]="items" -->
