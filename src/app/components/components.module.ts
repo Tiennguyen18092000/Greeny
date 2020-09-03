@@ -75,7 +75,7 @@ import { LoginComponent } from './header/login/login.component';
     NbToggleModule,
 
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
     MatToolbarModule
 
   ],

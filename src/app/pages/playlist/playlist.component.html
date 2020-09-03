@@ -1,28 +1,43 @@
 <nb-layout>
-  <nb-layout-header fixed>
-      <app-header></app-header>
-  </nb-layout-header>
+    <nb-layout-header fixed>
+        <app-header></app-header>
+    </nb-layout-header>
 
-  <nb-sidebar>
-      <app-side-bar></app-side-bar>
-  </nb-sidebar>
+    <nb-sidebar>
+        <app-side-bar></app-side-bar>
+    </nb-sidebar>
 
-  <nb-layout-column>
-    <nb-card size="tiny" class="container">
-      <nb-card-body>
-          <h5>Ranking</h5>
-          <p>{{file.length}} Postions</p>
-      </nb-card-body>
-      <div class="card-row" *ngIf="headerFiles">
-          <div class="card-col" *ngFor="let music of headerFiles">
-              <img [src]="music.imgURL" class="header-image box-shadow" (click)="openFile(cloudService.index)">
-          </div>
-      </div>
-  </nb-card>
-  </nb-layout-column>
+    <nb-layout-column>
+        <nb-card size="tiny" class="container">
+            <nb-card-body>
+                <h5>Ranking</h5>
+                <p>{{file.length}} Postions</p>
+            </nb-card-body>
+            <div class="card-row" *ngIf="headerFiles">
+                <div class="card-col" *ngFor="let music of headerFiles">
+                    <img [src]="music.imgURL" class="header-image box-shadow" (click)="openFile(cloudService.index)">
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card-col" *ngFor="let file of headerFiles">
+                    <img [src]="file.imgURL" class="header-image box-shadow"
+                        (click)="openFile(file, cloudService.index)">
+                </div>
+            </div>
 
-  <nb-layout-footer fixed>
-      <app-footer></app-footer>
-  </nb-layout-footer>
+            <h5>New Played</h5>
+            <p>{{file.length}} Postions</p>
+
+            <nb-list listenWindowScroll="true" class="list-items">
+                <nb-list-item class="tracks" *ngFor="let file of file">
+                    <app-track [file]="file" [tag]="file.id" [isInPlaylist]="false"></app-track>
+                </nb-list-item>
+            </nb-list>
+        </nb-card>
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <app-footer></app-footer>
+    </nb-layout-footer>
 
 </nb-layout>
